@@ -29,6 +29,7 @@ class MemberServiceTest {
         //given
         Member member = new Member();
         member.setName("hello");
+        member.setPassword("1234");
 
         //when
         Long saveId = memberService.join(member);
