@@ -13,5 +13,12 @@ public class BoardController {
     public String list(){
         return "Board_list";
     }
+    @GetMapping("post/write_form")
+    @ResponseBody
+    public String postWriteForm()
+    {
+        return "write_form";
+
+    }
 
 }

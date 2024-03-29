@@ -16,7 +16,38 @@ public class Post {
     private String content;
     private LocalDateTime createDate;
 
-    //@OneToMany(mappedBy = "member,", cascade = CascadeType.REMOVE)
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public LocalDateTime getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(LocalDateTime createDate) {
+        this.createDate = createDate;
+    }
+//@OneToMany(mappedBy = "member,", cascade = CascadeType.REMOVE)
     //private List<Member> memberList;
 
 
