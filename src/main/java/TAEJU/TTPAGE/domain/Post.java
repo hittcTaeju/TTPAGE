@@ -14,7 +14,7 @@ public class Post {
     private Long id;
     private String subject;
     private String content;
-    private LocalDateTime createDate;
+    private LocalDateTime createdate;
 
     public Long getId() {
         return id;
@@ -41,11 +41,11 @@ public class Post {
     }
 
     public LocalDateTime getCreateDate() {
-        return createDate;
+        return createdate;
     }
 
     public void setCreateDate(LocalDateTime createDate) {
-        this.createDate = createDate;
+        this.createdate = createDate;
     }
 //@OneToMany(mappedBy = "member,", cascade = CascadeType.REMOVE)
     //private List<Member> memberList;

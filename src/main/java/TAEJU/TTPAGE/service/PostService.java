@@ -18,7 +18,7 @@ public class PostService {
     public PostService(PostRepository postRepository) {
         this.postRepository = postRepository;
     }
-    public Long write_post(Post post){
+    public Long join(Post post){
         postRepository.save(post);
         return post.getId();
     }
