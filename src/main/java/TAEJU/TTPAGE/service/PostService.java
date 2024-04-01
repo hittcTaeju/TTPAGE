@@ -22,7 +22,7 @@ public class PostService {
         postRepository.save(post);
         return post.getId();
     }
-    public List<Post> findMembers(){
+    public List<Post> findPosts(){
         return postRepository.findAll();
     }
     public Optional<Post> findOne(Long postId){
